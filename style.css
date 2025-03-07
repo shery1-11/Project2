@@ -1,4 +1,169 @@
-.p {
-
-   background-color:aqua;
+body{
+   background-color:#1565c0;
+   animation-name: none;
 }
+
+#layerone{
+   z-index: 1;
+   position:absolute;
+}
+
+#layertwo{
+   z-index:2;
+   position:absolute;
+}
+
+#layerthree{
+   z-index:3;
+   position:fixed;
+   text-align:right;
+}
+
+h1{
+   box-sizing:border-box;
+   width:max-content;
+   height:max-content;
+   margin:50px auto;
+   font-size:100pt;
+   mix-blend-mode:color;
+   font-family:'picnic';
+
+   color:rgb(255, 0, 242);
+   text-align:center;
+   word-spacing: 20pt;
+   line-height: 1;
+}
+
+.deco{
+   box-sizing:border-box;
+   width:600px;
+   height:max-content;
+   right:0;
+   font-family: 'picnic';
+   font-size:100pt;
+   mix-blend-mode:exclusion;
+   color:white;
+   line-height:1.2;
+}
+
+
+.boxa{
+   float: left;
+   font-family:'Courier New', Courier, monospace ;
+   font-weight:500;
+   color:aquamarine;
+}
+
+.boxb{
+   float:right;
+   margin:auto;
+   font-family:'Courier New', Courier, monospace ;
+   font-weight:lighter;
+   font-size:20pt;
+   color:aquamarine;
+}
+
+.list{
+   float:left;
+   font-family: 'Courier New', Courier, monospace;
+   color:aquamarine;
+
+}
+
+.a {
+   width: max-content;
+   height: 300px;
+   background:none;
+   position: relative;
+   animation: up infinite;
+   animation-duration: 3s;
+   text-align:center;
+   font-size: 100pt;
+   font-family: 'picnic';
+ }
+
+ .b {
+   width: max-content;
+   height: 300px;
+   position: relative;
+   animation: down infinite;
+   animation-duration: 5s;
+   font-family:'pilow';
+   font-size: 30pt;
+   text-align:left;
+
+ }
+
+
+ img {
+   max-width:100%;
+   height:auto;
+   
+ }
+
+ .c{
+   width: fit-content;
+   height: 300px;
+   position: relative;
+   animation: c infinite;
+   animation-duration: 6s;
+   font-size: 60pt;
+   font-family:'picnic';
+
+ }
+
+ .d{
+   width: 400px;
+   height: 100px;
+   position: relative;
+   animation: d infinite;
+   animation-duration: 3s;
+   font-size: 40pt;
+   font-family:'pilow';
+ }
+
+ .e{
+   width: 400px;
+   height: 100px;
+   position: relative;
+   animation: e infinite;
+   animation-duration: 5s;
+   font-size: 70pt;
+   font-family:'picnic';
+ }
+
+ @font-face {
+   font-family: 'picnic';
+   src: url(./font/PicNic-Regular.otf);
+
+   font-family:'pilow';
+   src: url(./font/Pilowlava-Regular.otf);
+ }
+
+
+
+@keyframes down{
+   0% {transform: translate(20px,0px);}
+   100% {transform: translate(800px,50px);}
+ }
+
+ @keyframes up{
+   0% {transform: translate(80px,400px);}
+   100% {transform:translate(0px,0px);}
+ }
+
+ @keyframes c{
+   0% {transform:translate(700px,30px);}
+   100% {transform:translate(0px,0px);}
+ }
+
+ @keyframes d{
+   0% {transform:translate(1000px,200px);}
+   100% {transform:translate(0px,5px);}
+ }
+
+ @keyframes e{
+   0% {transform:translate(200px,500px);}
+   100% {transform:translate(1000px,0px);}
+ }
+
