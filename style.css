@@ -28,7 +28,7 @@ h1{
    mix-blend-mode:color;
    font-family:'picnic';
 
-   color:rgb(255, 0, 242);
+   color:rgb(255, 0, 255);
    text-align:center;
    word-spacing: 20pt;
    line-height: 1;
@@ -37,7 +37,7 @@ h1{
 .deco{
    box-sizing:border-box;
    width:600px;
-   height:max-content;
+   height:20px;
    right:0;
    font-family: 'picnic';
    font-size:100pt;
@@ -55,12 +55,24 @@ h1{
 }
 
 .boxb{
-   float:right;
-   margin:auto;
+   background-color:aquamarine;
+   margin-top:400px;
+   margin-left: 850px;
+   width:max-content;
+   height:600px;
+   text-align:center;
    font-family:'Courier New', Courier, monospace ;
-   font-weight:lighter;
+   
    font-size:20pt;
-   color:aquamarine;
+   color:#1565c0;
+}
+
+.radius:hover{
+   border-radius: 60% 10% / 80% 50%;
+   transition:1s;
+   background-color:#ff00e6;
+   color:aqua;
+
 }
 
 .list{
@@ -132,6 +144,17 @@ h1{
    font-family:'picnic';
  }
 
+ .f{
+   width: fit-content;
+   height: 300px;
+   position: relative;
+   bottom: 0;
+   font-family:'Courier New', Courier, monospace ;
+   font-weight:500;
+   color:aquamarine;
+}
+
+
  @font-face {
    font-family: 'picnic';
    src: url(./font/PicNic-Regular.otf);
@@ -149,7 +172,7 @@ h1{
 
  @keyframes up{
    0% {transform: translate(80px,400px);}
-   100% {transform:translate(0px,0px);}
+   100% {transform:translate(0px,-100px);}
  }
 
  @keyframes c{
@@ -166,4 +189,6 @@ h1{
    0% {transform:translate(200px,500px);}
    100% {transform:translate(1000px,0px);}
  }
+
+
 
