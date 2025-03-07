@@ -88,7 +88,7 @@ h1{
    background:none;
    position: relative;
    animation: up infinite;
-   animation-duration: 3s;
+   animation-duration: 4s;
    text-align:center;
    font-size: 100pt;
    font-family: 'picnic';
@@ -99,7 +99,7 @@ h1{
    height: 300px;
    position: relative;
    animation: down infinite;
-   animation-duration: 5s;
+   animation-duration: 3s;
    font-family:'pilow';
    font-size: 30pt;
    text-align:left;
@@ -166,28 +166,28 @@ h1{
 
 
 @keyframes down{
-   0% {transform: translate(20px,0px);}
-   100% {transform: translate(800px,50px);}
+   0% {transform: translate(800px,0px);}
+   100% {transform: translate(-100px,50px);}
  }
 
  @keyframes up{
-   0% {transform: translate(80px,400px);}
-   100% {transform:translate(0px,-100px);}
+   0% {transform: translate(-80px,400px);}
+   100% {transform:translate(0px,-1000px);}
  }
 
  @keyframes c{
-   0% {transform:translate(700px,30px);}
-   100% {transform:translate(0px,0px);}
+   0% {transform:translate(100px,30px);}
+   100% {transform:translate(600px,-100px);}
  }
 
  @keyframes d{
    0% {transform:translate(1000px,200px);}
-   100% {transform:translate(0px,5px);}
+   100% {transform:translate(0px,-200px);}
  }
 
  @keyframes e{
-   0% {transform:translate(200px,500px);}
-   100% {transform:translate(1000px,0px);}
+   0% {transform:translate(20px,50px);}
+   100% {transform:translate(1000px,-300px);}
  }
 
 
