@@ -44,7 +44,11 @@ h2{
   opacity:0.5;
 }
 
-
+.draggable{
+  position: fixed;
+  overflow: hidden;
+  color:aliceblue;
+}
 
 .deco{
    box-sizing:border-box;
@@ -168,6 +172,7 @@ h2{
    font-family:'Courier New', Courier, monospace ;
    font-weight:500;
    color:aquamarine;
+   z-index: 49;
 }
 
 
