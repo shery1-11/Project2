@@ -1,6 +1,6 @@
 body{
-   background-color:#1565c0;
-   animation-name: none;
+  background-color: rgb(255, 68, 11); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #1565c0 , rgb(6, 28, 79));
 }
 
 #layerone{
