@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-    let cnv = createCanvas(windowWidth, windowHeight);
+  let cnv = createCanvas(windowWidth, windowHeight);
   cnv.position(0,0)
   cnv.style('z-index', '-2');
   cnv.style('position','aboslute');
@@ -19,16 +19,16 @@ function setup() {
 }
 
 function draw() {
+  background(0,0,0);
   noCursor();
-  background(255)
-  if(x===4){
+  if(x===50){
 
   image(img, mouseX-50, mouseY-50, 100, 100);
   }
 }
   
 function mousePressed(){
-      x=4;
+      x=50;
 }
 function windowResized(){
     resizedcanvas(windowWidth, windowHeight);
