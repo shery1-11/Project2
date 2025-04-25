@@ -9,10 +9,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowwidth, windowheight);
-  CanvasCaptureMediaStreamTrack.position(0,0)
-  CanvasCaptureMediaStreamTrack.style('z-index', '-2');
-  CanvasCaptureMediaStreamTrack.style('position','aboslute');
+    let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.position(0,0)
+  cnv.style('z-index', '-2');
+  cnv.style('position','aboslute');
   // Image mode center will center the image on the mouse, comment out to see the difference
   imageMode(CENTER);
   background(0,0,0);//transparent background
@@ -31,5 +31,5 @@ function mousePressed(){
       x=1;
 }
 function windowResized(){
-    resizedcanvas(windowwidth, windowheight);
+    resizedcanvas(windowWidth, windowHeight);
 }
