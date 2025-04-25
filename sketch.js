@@ -27,7 +27,7 @@ function draw() {
 }
   
 function mousePressed(){
-    background(0,0,0);
+    background(255);
       x=50;
 }
 function windowResized(){
