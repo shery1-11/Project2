@@ -21,14 +21,14 @@ function setup() {
 function draw() {
   noCursor();
   background(255)
-  if(x===1){
+  if(x===4){
 
   image(img, mouseX-50, mouseY-50, 100, 100);
   }
 }
   
 function mousePressed(){
-      x=1;
+      x=4;
 }
 function windowResized(){
     resizedcanvas(windowWidth, windowHeight);
