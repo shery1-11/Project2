@@ -15,11 +15,10 @@ function setup() {
   cnv.style('position','aboslute');
   // Image mode center will center the image on the mouse, comment out to see the difference
   imageMode(CENTER);
-  background(0,0,0);//transparent background
 }
 
 function draw() {
-  background(0,0,0);
+
   noCursor();
   if(x===50){
 
@@ -28,6 +27,7 @@ function draw() {
 }
   
 function mousePressed(){
+    background(0,0,0);
       x=50;
 }
 function windowResized(){
